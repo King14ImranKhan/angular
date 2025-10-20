@@ -1,0 +1,18 @@
+.my-button {
+    background-color: #007bff; /* blue background */
+    color: #ffffff;            /* white text */
+    border: none;              /* remove default border */
+    padding: 10px 20px;        /* space inside button */
+    border-radius: 5px;        /* rounded corners */
+    cursor: pointer;           /* pointer on hover */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: #0056b3; /* darker blue on hover */
+}
+
+.button-text {
+    font-weight: bold;
+}

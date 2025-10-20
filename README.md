@@ -1,53 +1,145 @@
-# Angular - The Complete Guide Course Resources
+. Basics / Fundamentals
 
-This repository contains resources (code snapshots, extra files & slides) for my [Angular - The Complete Guide](https://acad.link/angular) online course.
+What is Angular & its architecture (Modules, Components, Templates, Services)
 
-## How To Use
+TypeScript basics (classes, interfaces, decorators)
 
-This repository contains the course slides and top-level [code-snapshots](/code-snapshots/) and [attachments](/attachments/) folders.
+Angular CLI commands (ng new, ng serve, ng generate)
 
-The [code-snapshots](/code-snapshots/) folder contains multiple code snapshots per course section - these snapshots should help you with debugging you course projects when following along with the course code.
+Components and Templates
 
-The [attachments](/attachments/) folder contains lecture-specific attachments which I reference in some of the course lectures.
+Data binding:
 
-## Using Code Snapshots
+Interpolation ({{ }})
 
-Code snapshots are complete Angular projects, provided for you to compare your code to mine. You will often find multiple snapshots for every course section, to reflect **different project states at different points of time**.
+Property binding ([property])
 
-The snapshots are stored in folders which carry names that should allow you to infer to which course lecture the snapshot belongs.
+Event binding ((event))
 
-You can use these code snapshots (even without downloading the code to your machine, especially when using [this GitHub feature](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor#opening-the-githubdev-editor)) to compare your code to mine.
+Two-way binding ([(ngModel)])
 
-You can also download the entire repository to your machine via the green "Code" button or by [cloning](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) it. Once downloaded, you can browse all snapshots locally on your machine.
+Directives:
 
-## Running the Code Snapshots
+Structural (*ngIf, *ngFor)
 
-As mentioned, the code snapshots provided in this repository are complete Angular projects. Their main purpose is to allow you to compare your code to mine (see [above](#using-code-snapshots)).
+Attribute ([ngClass], [ngStyle])
 
-But once you downloaded them you can also run the code snapshots on your machine. To do this, you must perform the following steps:
+Pipes (built-in pipes like date, currency, and custom pipes)
 
-### 1) Install dependencies
+2. Forms
 
-First, you must re-create the `node_modules` folder and install all required third-party dependencies.
+Template-driven forms
 
-This is done via the following command:
+Reactive forms (FormGroup, FormControl, FormBuilder)
 
-```shell
-npm install
-```
+Form validation (required, minlength, pattern, custom validators)
 
-**Important:** You must be navigated into the project folder (inside your terminal / command prompt) before running this command.
+3. Services & Dependency Injection
 
-### 2) Run the development server
+Creating services (ng generate service)
 
-As a next step, you can start the development server via
+Injecting services into components
 
-```shell
-npm start
-```
+Singleton services
 
-or 
+Providers and hierarchical DI
 
-```shell
-ng serve
-```
+4. Routing & Navigation
+
+Configuring routes (RouterModule.forRoot())
+
+Route parameters & query parameters
+
+Lazy loading modules
+
+Route guards (CanActivate, CanDeactivate)
+
+Navigation programmatically
+
+5. HTTP & APIs
+
+HttpClient module
+
+GET, POST, PUT, DELETE requests
+
+Observables (rxjs) and subscriptions
+
+Error handling
+
+Interceptors
+
+6. Component Communication
+
+Input and Output decorators (@Input, @Output)
+
+EventEmitters
+
+Shared service for communication
+
+ViewChild, ContentChild
+
+7. Advanced Topics
+
+Angular lifecycle hooks (ngOnInit, ngOnDestroy, etc.)
+
+Change Detection strategies
+
+Dynamic components
+
+Custom directives
+
+Custom pipes
+
+8. State Management
+
+Using RxJS for state
+
+BehaviorSubject & Observables
+
+NgRx (Redux pattern in Angular)
+
+Store, Actions, Reducers, Effects
+
+9. Performance & Optimization
+
+Lazy loading modules
+
+Preloading strategies
+
+OnPush change detection
+
+TrackBy with *ngFor
+
+Avoiding unnecessary re-renders
+
+10. Testing
+
+Unit testing with Jasmine/Karma
+
+Component testing
+
+Service testing
+
+E2E testing with Protractor / Cypress
+
+11. Angular Material / UI Libraries
+
+Angular Material components
+
+Styling & theming
+
+Reactive forms with Angular Material
+
+Animations
+
+12. Deployment & Build
+
+Environment configuration (environment.ts)
+
+Production build (ng build --prod)
+
+Angular Universal (SSR)
+
+PWA setup
+
+Dockerizing Angular apps

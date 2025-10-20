@@ -1,0 +1,16 @@
+.app-header {
+    text-align: center; /* center all content inside header */
+    padding: 20px 0;    /* optional spacing */
+}
+
+.header-logo {
+    display: block;
+    margin: 0 auto;   /* center the image */
+    width: 80px;
+    height: auto;
+}
+
+.header-title {
+    margin: 10px 0 0 0; /* spacing from the logo */
+    font-size: 24px;    /* adjust as needed */
+}
