@@ -1,0 +1,6 @@
+<h3>Receiver Component</h3>
+
+<p style="color: blue;">Message from Sender: {{ receivedMessage }}</p>
+
+<input [(ngModel)]="message" placeholder="Type a message to Sender" />
+<button (click)="sendMessage()">Send</button>
