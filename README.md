@@ -143,3 +143,11 @@ Angular Universal (SSR)
 PWA setup
 
 Dockerizing Angular apps
+
+
+Commands-
+set NODE_OPTIONS=--max-old-space-size=1000 --openssl-legacy-provider
+set NODE_OPTIONS=--openssl-legacy-provider
+npm install --legacy-peer-deps
+npm install --force
+chrome.exe --disable-web-security --user-data-dir="C:\chrome-qa2-profile" --new-window https://hello.com

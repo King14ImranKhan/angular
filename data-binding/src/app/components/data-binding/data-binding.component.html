@@ -1,0 +1,45 @@
+<div class="col-4">
+  <div class="row">
+    <div class="col-4 bg-success text-white p-2 rounded">
+      Interpolation
+      <h4>{{ courseName }}</h4>
+    </div>
+
+    <div class="mt-3">
+      <label class="form-label">Interpolation in Input:</label>
+      <input type="text" class="form-control" value="{{ courseName }}" />
+    </div>
+
+    <div class="mt-3">
+      <label class="form-label">Property Binding:</label>
+      <input type="text" class="form-control" [value]="courseName" />
+    </div>
+
+    <div class="mt-3">
+      <label class="form-label">html to ts</label><br>
+      <button class="btn btn-primary" (click)="changeCourseName()">ChangeCourseName</button>
+    </div>
+    <div class="mt-3">
+      <label class="form-label">Two Way Binding:</label><br>
+      <input type="text" class="form-control" [(ngModel)]="courseName" />
+    </div>
+    <div class="mt-3">
+      <label class="form-label">Two Way Binding with Dropdown:</label><br>
+      <select class="form-select" [(ngModel)]="stateName">
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Maharashtra">Maharashtra</option>
+      </select>
+    </div>
+    <div class="mt-3">
+      Selected State: {{ stateName }}   <br />
+     </div>
+     <div class="mt-3">
+      <label class="form-label">Two Way Binding for checkbox:</label><br>
+      <input type="checkbox" class="form-check-input" [(ngModel)]="isIndian" />
+    </div>
+    <div class="mt-3">
+      <label class="form-label">Signal in Angular 17</label>
+      <h2>{{ myname() }}</h2>
+      </div>
+</div>
