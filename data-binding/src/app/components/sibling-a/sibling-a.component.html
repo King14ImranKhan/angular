@@ -1,0 +1,13 @@
+<h3>Sibling A</h3>
+
+<!-- Input field to type message to Sibling B -->
+<input [(ngModel)]="message" placeholder="Message to Sibling B" />
+
+<!-- Button to send the message -->
+<button (click)="sendMessage()">Send</button>
+
+<!-- Display messages received from Sibling B -->
+<h4>Messages from Sibling B:</h4>
+<ul>
+  <li *ngFor="let msg of messagesFromB">{{ msg.text }}</li>
+</ul>

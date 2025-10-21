@@ -151,3 +151,16 @@ set NODE_OPTIONS=--openssl-legacy-provider
 npm install --legacy-peer-deps
 npm install --force
 chrome.exe --disable-web-security --user-data-dir="C:\chrome-qa2-profile" --new-window https://hello.com
+
+Summary Table
+Communication Type	Mechanism/Tool	Direction	Use Case
+Parent → Child	@Input()	Down	Pass data to child
+Child → Parent	@Output() + EventEmitter	Up	Notify parent of action
+Two-Way Binding	@Input() + @Output()	Both	Live updates, forms
+Sibling → Sibling	Shared Service (RxJS)	Both	Sync data across siblings
+Unrelated Components	Service / Store (NgRx)	Both	Global state / events
+Parent → Child Direct	@ViewChild()	Direct method	Call child methods
+Content Projection	@ContentChild()	Direct method	Access projected content
+Template Reference	#variable	Direct method	Quick template access
+Persistent / Global	Local Storage / State	Both	Save/load state across components
+Reactive Streams	RxJS Observables	Both	Real-time data flow
