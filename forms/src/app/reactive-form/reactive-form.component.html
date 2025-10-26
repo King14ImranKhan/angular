@@ -1,0 +1,27 @@
+<h2>Reactive Form</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label>Name:</label>
+  <input type="text" formControlName="name" />
+  <div *ngIf="userForm.get('name')?.invalid && userForm.get('name')?.touched">
+    <small style="color:red">Name is required</small>
+  </div>
+
+  <label>Email:</label>
+  <input type="email" formControlName="email" />
+  <div *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
+    <small style="color:red">Valid email required</small>
+  </div>
+
+  <label>Age:</label>
+  <input type="number" formControlName="age" />
+  <div *ngIf="userForm.get('age')?.invalid && userForm.get('age')?.touched">
+    <small style="color:red">Age must be greater than 0</small>
+  </div>
+
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+  <button type="button" (click)="onReset()">Reset</button>
+</form>
+
+<p><b>Form Data:</b></p>
+<pre>{{ userForm.value | json }}</pre>

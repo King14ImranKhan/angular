@@ -1,0 +1,22 @@
+<div style="text-align:center; margin-top:30px;">
+  <h2>Multiple Reducers Example (User + Counter)</h2>
+
+  <h3>Counter: {{ count$ | async }}</h3>
+  <button (click)="increment()">+</button>
+  <button (click)="decrement()">-</button>
+  <button (click)="resetCounter()">Reset Counter</button>
+
+  <hr>
+
+  <h3>User Form</h3>
+  <input type="text" [(ngModel)]="name" placeholder="Enter name">
+  <input type="email" [(ngModel)]="email" placeholder="Enter email">
+  <br><br>
+  <button (click)="addUser()">Add User</button>
+  <button (click)="resetUser()">Reset User</button>
+
+  <hr>
+
+  <h3>Current User Data:</h3>
+  <pre>{{ user$ | async | json }}</pre>
+</div>

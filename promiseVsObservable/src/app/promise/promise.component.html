@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Country Name Search (Promise Example)</h2>
+
+  <input
+    type="text"
+    [(ngModel)]="countryName"
+    placeholder="Enter country name"
+  />
+  <button (click)="searchCountry()">Search</button>
+
+  <div *ngIf="result">
+    <h3>Country Data:</h3>
+    <pre>{{ result | json }}</pre>
+  </div>
+</div>

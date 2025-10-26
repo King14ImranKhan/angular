@@ -1,0 +1,14 @@
+<h3>🌍 Search Country (Observable)</h3>
+
+<input type="text" [(ngModel)]="countryName" placeholder="Enter country name" />
+<button (click)="searchCountry()">Search</button>
+
+<ul *ngIf="result?.length > 0; else noData">
+  <li *ngFor="let country of result">
+    <b>{{ country.name.common }}</b> — {{ country.region }}
+  </li>
+</ul>
+
+<ng-template #noData>
+  <p *ngIf="countryName">No country found or invalid name.</p>
+</ng-template>
